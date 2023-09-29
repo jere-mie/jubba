@@ -14,6 +14,8 @@
     <style>
         body{
             background-image: url(images/jubba.png);
+            cursor: url(images/jubbapointer3.png) 3 3, auto !important;
+            font-family: "Comic Sans MS" !important;
         }
         .body-overlay{
             background-color: rgba(255, 255, 255, 0.75);
@@ -25,23 +27,26 @@
         }
 	.phrase {
             position: absolute; 
-            top: 0px; left: ${x - 24}px; 
             transition-duration: 1500ms;
             filter: opacity(1);
-	    font-family: "Comic Sans MS";
+    	    font-family: "Comic Sans MS";
 	}
+    .home-desc {
+        display: none !important;
+    }
     </style>
 </head>
 <body>
     <div class="body-overlay">
-        <marquee scrollamount="35" style="background-color: rgba(255, 0, 0, 0.2);">
-            <h1>WE LOVE JUBBA!!!</h1> 
+        <marquee scrollamount="35">
+            <h1 style="background-color: rgba(255, 0, 0, 0.2);">WE LOVE JUBBA!!!</h1> 
         </marquee>
-        <marquee direction="right" scrollamount="60">
-            <h2>Look at this awesome food</h2>
+        <marquee direction="right" scrollamount="30">
+            <h2 style="display: inline; position: relative; bottom: 100px; background-color: rgba(0, 255, 0, 0.1);">Look at this awesome food</h2>
             <img src="images/food.png" style="width: 250px;">
         </marquee>
-        <h3>Tell the world how much you love jubba too</h3>   
+        <h3 style="display: inline; position: relative; bottom: 130px;">Tell the world how much you love jubba too</h3>
+        <img src="images/pointdown.gif">
         <!-- begin wwww.htmlcommentbox.com -->
         <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">HTML Comment Box</a> is loading comments...</div>
         <link rel="stylesheet" type="text/css" href="https://www.htmlcommentbox.com/static/skins/bootstrap/twitter-bootstrap.css?v=0" />
