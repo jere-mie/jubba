@@ -5,17 +5,19 @@ const phraseList = [
 	"jubba = best",
 	"osmows sucks"
 ]
+const phraseImages = 4
 
 
 document.addEventListener("mousemove", event => {
 	if (Math.random() > frequency) return
-	const phrase = phraseList[Math.floor(Math.random() * phraseList.length)]
+	const phrase = Math.floor(Math.random() * phraseImages)
 	spawnPhrase(phrase, event.clientX, event.clientY)
 })
 
 const spawnPhrase = (phrase, x, y) => {
-	const p = document.createElement("p")
-	p.textContent = phrase
+	const p = document.createElement("img")
+	p.src = `images/flair/${phrase}.png`
+	// p.textContent = phrase
 	p.style = `top: ${y - 8}px; left: ${x - 24}px;`
 	p.classList.add("phrase")
 	document.body.appendChild(p)
