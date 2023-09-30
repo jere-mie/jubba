@@ -23,7 +23,7 @@ const spawnPhrase = (phrase, x, y) => {
 		const theta = Math.random() * 2 * Math.PI
 		x += 100 * Math.cos(theta)
 		y += 100 * Math.sin(theta)
-		p.style = `top: ${y - 8}px; left: ${x - 24}px; filter: opacity(0);`
+		p.style = `top: ${y - 8}px; left: ${x - 24}px; filter: opacity(0); transform: rotate(1turn);`
 	}, 10)
 	setTimeout(() => {
 		p.remove()
